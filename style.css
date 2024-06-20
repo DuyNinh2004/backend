@@ -1,0 +1,170 @@
+/* Đặt kiểu chung cho body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+/* Kiểu cho chi tiết bài viết */
+.post-detail {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Tiêu đề bài viết */
+.post-detail h1 {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Thông tin meta của bài viết */
+.post-meta {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Form để lại bình luận */
+.comment-form {
+    background: #fb1717;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.comment-form h3 {
+    margin-bottom: 15px;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background: #555;
+}
+
+/* Kiểu cho mỗi bình luận */
+.comment {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #007BFF;
+}
+
+/* Phần meta của bình luận */
+.comment-meta {
+    color: #666666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Phong cách cho trả lời (nếu bạn cần) */
+.reply {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.reply:before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid #f9f9f9; 
+    position: absolute;
+    left: -10px;
+    top: 20px;
+}
+/* Định dạng chung cho các comment */
+.comment {
+    border: 1px solid #ddd; /* Đường viền màu xám nhạt */
+    padding: 15px;
+    margin-bottom: 15px; /* Khoảng cách giữa các comment */
+    background-color: #fff; /* Màu nền trắng cho comment */
+    border-radius: 5px; /* Góc tròn cho khung viền */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho từng comment */
+}
+
+/* Nếu bạn muốn bình luận con (trả lời) có định dạng khác, thêm CSS cho .reply tương tự như trên */
+
+/* Nếu bạn cần, định dạng cho comment-form cũng như tương tự */
+.comment-form {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Định kiểu cho bình luận chính */
+.comment {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Định kiểu cho container chứa các trả lời */
+.replies-container {
+    margin-top: 10px;
+}
+
+/* Định kiểu cho mỗi phản hồi (reply) */
+.reply {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-left: 20px; /* Thụt vào để tạo cấu trúc thảo luận */
+}
+/* Thêm CSS cho phần trả lời có thụt lề phân cấp */
+.reply-level-1 {
+    margin-left: 20px;
+}
+
+.reply-level-2 {
+    margin-left: 40px;
+}
+
+.reply-level-3 {
+    margin-left: 60px;
+}
+.comment img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 10px; /* Khoảng cách giữa hình ảnh và nội dung bình luận */
+}
+
+/* Có thể tiếp tục thêm nhiều lớp phân cấp nếu cần */
